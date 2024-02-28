@@ -1,0 +1,10 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light-emphasis">GiftApp</h3>
+  <hr class="text-light">
+
+  <div class="list-group list-reset">
+    <button *ngFor="let item of showTag()" class="list-group-item list-group-item-action" (click)="searchTag">
+      {{ item | titlecase }}
+    </button>
+  </div>
+</div>
